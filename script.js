@@ -42,10 +42,10 @@ async function getApiResponse(aiChatBox) {
 function showLoading() {
   const html = `
     <div class="img">
-      <img src="images/ai.png" alt="AI model" width="50" />
+      <img src="ai.png" alt="AI model" width="50" />
     </div>
     <p class="text"></p>
-    <img class="loading" src="images/loading.gif" height="50" alt="loading">
+    <img class="loading" src="loading.gif" height="50" alt="loading">
   `;
   const aiChatBox = createChatBox(html, "ai-chat-box");
   chatContainer.appendChild(aiChatBox);
@@ -65,7 +65,7 @@ btn.addEventListener("click", () => {
 
   const html = `
     <div class="img">
-      <img src="images/user.png" alt="User" width="50" />
+      <img src="user.png" alt="User" width="50" />
     </div>
     <p class="text">${userMessage}</p>
   `;
@@ -75,3 +75,4 @@ btn.addEventListener("click", () => {
   input.value = "";
   setTimeout(showLoading, 500);
 });
+
